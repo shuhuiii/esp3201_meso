@@ -1,33 +1,77 @@
-# MESO: Marine Waste Robot
+# ENet - Real Time Semantic Segmentation
 
-## Overview
+A Neural Net Architecture for real time Semantic Segmentation. <br/>
+In this repository we have reproduced the ENet Paper - Which can be used on
+mobile devices for real time semantic segmentattion. The link to the paper can be found here: [ENet](https://arxiv.org/pdf/1606.02147.pdf)
 
-MESO is a comprehensive solution designed for autonomous detection, sorting, and collection of marine waste in oceanic environments. This project aims to address the critical gap in existing cleanup methods by leveraging advanced technologies.
+## How to use?
 
-## Features
+0. This repository comes in with a handy notebook which you can use with Colab. <br/>
+You can find a link to the notebook here: [
+ENet - Real Time Semantic Segmentation](https://github.com/iArunava/ENet-Real-Time-Semantic-Segmentation/blob/master/ENet-Real%20Time%20Semantic%20Segmentation.ipynb) <br/>
+Open it in colab: [Open in Colab](https://colab.research.google.com/github/iArunava/ENet-Real-Time-Semantic-Segmentation/blob/master/ENet-Real%20Time%20Semantic%20Segmentation.ipynb)
 
-- **Autonomous Detection:** MESO utilizes cutting-edge object detection algorithms to autonomously identify marine waste in diverse underwater scenarios.
+---
 
-- **Sorting Capabilities:** The robot employs intelligent sorting mechanisms to categorize different types of marine debris for efficient collection.
 
-- **Data-Driven Decision Making:** MESO incorporates reinforcement learning techniques to enhance its decision-making process, allowing for adaptability in complex underwater environments.
+0. Clone the repository and cd into it
+```
+git clone https://github.com/iArunava/ENet-Real-Time-Semantic-Segmentation.git
+cd ENet-Real-Time-Semantic-Segmentation/
+```
 
-## Getting Started
+1. Use this command to train the model
+```
+python3 init.py --mode train -iptr path/to/train/input/set/ -lptr /path/to/label/set/
+```
 
-To get started with MESO, follow the [installation instructions](#) in the provided documentation. Ensure you have the required dependencies and hardware resources.
+2. Use this command to test the model
+```
+python3 init.py --mode test -m /path/to/the/pretrained/model.pth -i /path/to/image/to/infer.png
+```
 
-## Usage
+3. Use `--help` to get more commands
+```
+python3 init.py --help
+```
 
-Explore the [usage guide](#) to understand how to deploy MESO for autonomous marine waste management. Find examples and use cases to maximize the effectiveness of the robot.
+## Some results
 
-## Contributions
+![enet infer 1](https://user-images.githubusercontent.com/26242097/51782315-4b88d300-214c-11e9-9c92-3444c6582a80.png)
+![enet infer 4](https://user-images.githubusercontent.com/26242097/51782341-a02c4e00-214c-11e9-8566-f2092ddad086.png)
+![enet infer 6](https://user-images.githubusercontent.com/26242097/51782371-01542180-214d-11e9-80b8-55807f83f776.png)
+![enet infer 5](https://user-images.githubusercontent.com/26242097/51782353-c3ef9400-214c-11e9-8c66-276795c83f08.png)
+![enet infer 2](https://user-images.githubusercontent.com/26242097/51782324-6b1ffb80-214c-11e9-9f92-741954699f4d.png)
 
-We welcome contributions from the community. If you're interested in contributing to MESO, please review our [contribution guidelines](CONTRIBUTING.md).
+## References
+1. A. Paszke, A. Chaurasia, S. Kim, and E. Culurciello.
+Enet: A deep neural network architecture
+for real-time semantic segmentation. arXiv preprint
+arXiv:1606.02147, 2016.
+
+## Citations
+
+```
+@inproceedings{ BrostowSFC:ECCV08,
+  author    = {Gabriel J. Brostow and Jamie Shotton and Julien Fauqueur and Roberto Cipolla},
+  title     = {Segmentation and Recognition Using Structure from Motion Point Clouds},
+  booktitle = {ECCV (1)},
+  year      = {2008},
+  pages     = {44-57}
+}
+
+@article{ BrostowFC:PRL2008,
+    author = "Gabriel J. Brostow and Julien Fauqueur and Roberto Cipolla",
+    title = "Semantic Object Classes in Video: A High-Definition Ground Truth Database",
+    journal = "Pattern Recognition Letters",
+    volume = "xx",
+    number = "x",   
+    pages = "xx-xx",
+    year = "2008"
+}
+```
 
 ## License
 
-MESO is released under the [Your License] License. See the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgements
-
-We express gratitude to our contributors and acknowledge the use of external libraries and resources that have inspired or supported the development of MESO.
+The code in this repository is distributed under the BSD v3 Licemse.<br/>
+Feel free to fork and enjoy :)
