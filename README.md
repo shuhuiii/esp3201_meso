@@ -2,7 +2,7 @@
 
 ## Overview
 
-MESO is a comprehensive solution designed for autonomous detection, sorting, and collection of marine waste in oceanic environments. This project aims to address the critical gap in existing cleanup methods by leveraging advanced technologies.
+MESO is a solution designed for autonomous detection, sorting, and collection of marine waste in oceanic environments. This project aims to address the critical gap in existing cleanup methods by leveraging advanced technologies.
 
 ## Features
 
