@@ -14,9 +14,9 @@ class UnderwaterEnv:
         self.clock = pg.time.Clock()
 
         # load shaders
-        with open('programs/vertex.glsl') as f:
+        with open('underwater_env/programs/vertex.glsl') as f:
             vertex = f.read()
-        with open('programs/fragment.glsl') as f:
+        with open('underwater_env/programs/fragment.glsl') as f:
             fragment = f.read()
         self.program = self.ctx.program(vertex_shader=vertex, fragment_shader=fragment)
 
