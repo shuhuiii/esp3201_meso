@@ -6,6 +6,7 @@ import sys
 from tqdm import tqdm
 
 def train(FLAGS):
+    
     # Defining the hyperparameters
     device =  FLAGS.cuda
     batch_size = FLAGS.batch_size
