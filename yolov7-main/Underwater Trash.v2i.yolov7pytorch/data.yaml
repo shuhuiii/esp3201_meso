@@ -7,6 +7,7 @@ names: ['-', 'This dataset was exported via roboflow.com on August 23- 2023 at 6
 
 roboflow:
   workspace: esp3201-project
+  project: underwater-trash-6ut2p
   version: 2
   license: CC BY 4.0
   url: https://universe.roboflow.com/esp3201-project/underwater-trash-6ut2p/dataset/2
