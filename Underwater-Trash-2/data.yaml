@@ -1,0 +1,14 @@
+names:
+- '-'
+- This dataset was exported via roboflow.com on August 23- 2023 at 6-06 AM GMT
+- multiplegarbagev2 - v2 2023-01-30 4-07pm
+nc: 3
+roboflow:
+  license: CC BY 4.0
+  project: underwater-trash-6ut2p
+  url: https://universe.roboflow.com/esp3201-project/underwater-trash-6ut2p/dataset/2
+  version: 2
+  workspace: esp3201-project
+test: ../test/images
+train: Underwater-Trash-2/train/images
+val: Underwater-Trash-2/valid/images
